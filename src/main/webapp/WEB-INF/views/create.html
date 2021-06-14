@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th ="https://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>Form create New Customer</h3>
+<form  action="#" th:action="@{/customer/create}" method="post" >
+    <div>
+        <span>Nhập id</span> <input type="text"  name="id"}>
+    </div>
+    <div>
+        <span>Nhập Tên</span> <input type="text" name ="name"}>
+    </div>
+
+    <div>
+        <span>Email</span> <input type="text" name="email"}>
+    </div>
+
+    <div>
+        <span>Địa chỉ</span> <input type="text" name="address"}>
+    </div>
+
+    <button type="submit">Create</button>
+
+</form>
+
+<footer th:replace="/layout::footer"> </footer>
+</body>
+</html>
